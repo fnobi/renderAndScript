@@ -1,0 +1,25 @@
+{
+  "name": "renderAndScript",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "jsdom": "*"
+  },
+  "devDependencies": {
+    "express": "3.0.0rc3",
+    "jade": "*"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "author": "Fujisawa Shin <shin@fnobi.com> (http://blog.fnobi.com/)",
+  "description": "[express.js plugin] render view and run client side js on server.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fnobi/renderWithScript.git"
+  }
+}
