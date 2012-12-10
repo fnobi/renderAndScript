@@ -1,6 +1,6 @@
 {
   "name": "render_and_script",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "start": "node app"
   },
@@ -20,6 +20,6 @@
   "description": "[express.js plugin] render view and run client side js on server.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fnobi/renderWithScript.git"
+    "url": "git://github.com/fnobi/renderAndScript.git"
   }
 }
