@@ -1,12 +1,12 @@
 {
-  "name": "renderAndScript",
+  "name": "render_and_script",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "start": "node app"
   },
   "dependencies": {
-    "jsdom": "*"
+    "jsdom": "*",
+    "async": "*"
   },
   "devDependencies": {
     "express": "3.0.0rc3",
