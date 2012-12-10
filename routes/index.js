@@ -4,7 +4,12 @@
  */
 
 exports.index = function(req, res){
-	res.renderAndScript('index', { title: 'Express' }, function () {
-		console.log('scripting!!');
-	});
+	res.renderAndScript(
+		'index',
+		{ title: 'Express' },
+		function (window, callback) {
+			window.document.body.innerHTML = 'scriped..';
+			callback();
+		}
+	);
 };
