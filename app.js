@@ -8,6 +8,8 @@ var express = require('express')
   , http = require('http')
   , path = require('path');
 
+var renderAndScript = require(__dirname);
+
 var app = express();
 
 app.configure(function(){
@@ -18,6 +20,7 @@ app.configure(function(){
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
+  app.use(renderAndScript);
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
 });
