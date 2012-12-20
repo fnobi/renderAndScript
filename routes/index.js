@@ -4,12 +4,14 @@
  */
 
 exports.index = function(req, res){
-	res.renderAndScript(
-		'index',
-		{ title: 'Express' },
+	res.renderAndScript('index', { title: 'Express' }, [
+		'/javascripts/jquery-1.8.2.js',
 		function (window, callback) {
-			window.document.body.innerHTML = 'scriped..';
+			var $ = window.$;
+
+			$('body').append('scripted..');
+
 			callback();
 		}
-	);
+	]);
 };
